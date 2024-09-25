@@ -1,11 +1,11 @@
 print("Välkommen till multiplikationskalkulatorn!")
 def multiplikation():
     tal_val = input("vilka siffror vill du multiplicera?: ").strip().split()
-    user_numbers = [int(num) for num in tal_val]
+    faktor = [int(tal) for tal in tal_val]
 
-    for num in user_numbers:
-        print(f"\nMultiplikationstabellen för {num}:")
+    for tal in faktor:
+        print(f"\nMultiplikationstabellen för {tal}:")
         for i in range(1, 11):
-            print(f"{num} * {i} = {num * i}")
+            print(f"{tal} * {i} = {tal * i}")
 
 multiplikation()
