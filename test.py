@@ -1,11 +1,11 @@
-def input_list():
-    input_list = []
-    input_str = input("Enter numbers: ").split()
-    for num in input_str:
-        input_list.append(int(num))
-    return input_list
+print("Välkommen till multiplikationskalkulatorn!")
+def multiplikation():
+    tal_val = input("vilka siffror vill du multiplicera?: ").strip().split()
+    user_numbers = [int(num) for num in tal_val]
 
-def add_list(input_list):
-    return sum(input_list)
+    for num in user_numbers:
+        print(f"\nMultiplikationstabellen för {num}:")
+        for i in range(1, 11):
+            print(f"{num} * {i} = {num * i}")
 
-print(add_list(input_list()))
+multiplikation()
