@@ -1,6 +1,8 @@
 print("Välkommen till multiplikationskalkulatorn!")
+
 def multiplikation():
-    tal_val = input("vilka siffror vill du multiplicera?: ").strip().split()
+    #la till en "split()" för att kunna dela upp den inmatade strängen
+    tal_val = input("Vilket tal vill du multiplicera?: ").split()
     faktor = [int(tal) for tal in tal_val]
 
     for tal in faktor:
